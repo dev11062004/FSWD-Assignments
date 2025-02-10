@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="Problem2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div class="expense-form">
+            <input type="text" id="description" placeholder="Expense Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <input type="date" id="expenseDate" required>
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <h2>Total Expenses: $<span id="totalExpenses">0.00</span></h2>
+
+        <div class="filter-form">
+            <input type="date" id="startDate">
+            <input type="date" id="endDate">
+            <button onclick="filterByDate()">Filter by Date Range</button>
+        </div>
+
+        <h2>Expense Report</h2>
+        <ul id="expenseList"></ul>
+
+        <button onclick="fetchExpenseReport()">Fetch Expense Report</button>
+    </div>
+
+    <script src="Problem2.js"></script>
+</body>
+</html>
