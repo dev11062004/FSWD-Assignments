@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shopping Cart System</h1>
+
+    <!-- Form to Add a Product -->
+    <div class="product-form">
+      <input type="text" id="productName" placeholder="Product Name" />
+      <input type="number" id="productPrice" placeholder="Price" />
+      <input type="number" id="productQuantity" placeholder="Quantity" />
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <!-- Cart Summary -->
+    <h2>Cart Summary</h2>
+    <div id="cartSummary" class="cart-summary"></div>
+
+    <!-- Cart Actions -->
+    <h3>Remove Product</h3>
+    <input type="text" id="removeProductName" placeholder="Enter product name to remove" />
+    <button onclick="removeProduct()">Remove Product</button>
+
+    <h3>Total Price</h3>
+    <div id="totalPrice"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
