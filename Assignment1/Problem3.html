@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Forecast Tracker</h1>
+
+    <!-- Form to Add City Weather -->
+    <div class="weather-form">
+      <input type="text" id="cityName" placeholder="City Name" />
+      <input type="number" id="temperature" placeholder="Temperature (°C)" />
+      <input type="text" id="condition" placeholder="Weather Condition (e.g., Sunny, Cloudy)" />
+      <button onclick="addCityWeather()">Add City Weather</button>
+    </div>
+
+    <!-- Weather Summary -->
+    <h2>Weather Summary</h2>
+    <div id="weatherSummary" class="weather-summary"></div>
+
+    <!-- Filter by Condition -->
+    <h3>Filter Cities by Condition</h3>
+    <input type="text" id="filterCondition" placeholder="Enter condition to filter (e.g., Sunny)" />
+    <button onclick="filterByCondition()">Filter by Condition</button>
+
+    <h3>Hottest City:</h3>
+    <div id="hottestCity"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
